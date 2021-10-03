@@ -1,0 +1,31 @@
+
+
+<div class = "container text-center">
+
+  <h1>Angular Calculator</h1>
+
+  <label class = "m-3">Input First Number</label>
+  <input (input) = "getLength(pwLength.value)" class = "btn btn-secondary text-white" type = "text" placeholder = "Input First Number" #pwLength>
+  
+  <hr>
+
+  <label class = "m-3">Input Second Number</label>
+  <input class = "btn btn-secondary text-white" type = "text" placeholder = "Input Second Number">
+  
+  <hr>
+  
+  
+    <button (click) = "add()" class = "btn btn-primary p-3 m-3">+</button>
+    <button (click) = "subtract()" class = "btn btn-primary p-3 m-3">-</button>
+    <button (click) = "multiply()" class = "btn btn-primary p-3 m-3">*</button>
+    <button (click) = "divide()" class = "btn btn-primary p-3 m-3">/</button>
+    
+    <hr>
+    
+    <div ng*If = "num1" && ng*If = "num2" >
+      <input [value] = "result" type = "text" placeholder = "Result">
+    </div>
+
+    <hr>
+
+</div>
